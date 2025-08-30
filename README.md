@@ -10,7 +10,7 @@
 ## Séries populaires sur BDplus.cc
 
 - [Accueil](https://bdplus.cc/)
-- [Toutes les séries](https://bdplus.cc/serie.html)
+- [Toutes les séries](https://bdplus.cc/serie_static/))
 - [index](https://bdplus.cc/serie_static/index.html)
 - [zombillenium](https://bdplus.cc/serie_static/zombillenium.html)
 - [xiii mystery](https://bdplus.cc/serie_static/xiii-mystery.html)
