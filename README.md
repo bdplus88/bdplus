@@ -1,25 +1,50 @@
-  echo "## Séries populaires sur BDplus.cc"
-  echo
-  echo "- [Accueil](https://bdplus.cc/)"
-  echo "- [Toutes les séries](https://bdplus.cc/serie.html)"
-  find /var/www/bdplus/serie_static -type f -name '*.html' \
-    -printf '%T@ %p\n' | sort -nr | head -n 12 | awk '{print $2}' \
-    | sed 's#^/var/www/bdplus#https://bdplus.cc#' \
-    | awk -F'/' '{u=$0; s=$NF; sub(/\.html$/,"",s); gsub(/-/," ",s); printf "- [%s](%s)\n", s, u }'
-} | tee /tmp/BDplus-links.md
 ## Séries populaires sur BDplus.cc
 
 - [Accueil](https://bdplus.cc/)
-- [Toutes les séries](https://bdplus.cc/serie_static/))
-- [index](https://bdplus.cc/serie_static/index.html)
-- [zombillenium](https://bdplus.cc/serie_static/zombillenium.html)
-- [xiii mystery](https://bdplus.cc/serie_static/xiii-mystery.html)
-- [xiii](https://bdplus.cc/serie_static/xiii.html)
-- [x isle](https://bdplus.cc/serie_static/x-isle.html)
-- [wunderwaffen](https://bdplus.cc/serie_static/wunderwaffen.html)
-- [world war x](https://bdplus.cc/serie_static/world-war-x.html)
-- [wollodrin](https://bdplus.cc/serie_static/wollodrin.html)
-- [wild west gloris lamontagne](https://bdplus.cc/serie_static/wild-west-gloris-lamontagne.html)
-- [west fantasy](https://bdplus.cc/serie_static/west-fantasy.html)
-- [west](https://bdplus.cc/serie_static/west.html)
-- [waterloo](https://bdplus.cc/serie_static/waterloo.html)
+- [Toutes les séries](https://bdplus.cc/serie.html)
+- [Univers](https://bdplus.cc/univers.html)
+- [Blog](https://bdplus.cc/blog.html)
+
+---
+
+### Nouveautés et séries marquantes
+- [Colonisation](https://bdplus.cc/serie_static/colonisation.html)
+- [La Geste Des Chevaliers Dragons](https://bdplus.cc/serie_static/la-geste-des-chevaliers-dragons.html)
+- [La Horde Du Contrevent](https://bdplus.cc/serie_static/la-horde-du-contrevent.html)
+- [Le Monde Sans Fin](https://bdplus.cc/serie_static/le-monde-sans-fin.html)
+- [Les 5 Terres](https://bdplus.cc/serie_static/les-5-terres.html)
+- [Les Gorilles du Général](https://bdplus.cc/serie_static/les-gorilles-du-general.html)
+- [Sillage](https://bdplus.cc/serie_static/sillage.html)
+
+---
+
+### Classiques incontournables
+- [Astérix](https://bdplus.cc/serie_static/asterix.html)
+- [Blueberry](https://bdplus.cc/serie_static/blueberry.html)
+- [Largo Winch](https://bdplus.cc/serie_static/largo-winch.html)
+- [Lucky Luke](https://bdplus.cc/serie_static/lucky-luke.html)
+- [Spirou](https://bdplus.cc/serie_static/spirou.html)
+- [Thorgal](https://bdplus.cc/serie_static/thorgal.html)
+- [Tintin](https://bdplus.cc/serie_static/tintin.html)
+
+---
+
+### Univers de Lanfeust
+- [Lanfeust de Troy](https://bdplus.cc/serie_static/lanfeust-de-troy.html)
+- [Trolls de Troy](https://bdplus.cc/serie_static/trolls-de-troy.html)
+- [Lanfeust des Étoiles](https://bdplus.cc/serie_static/lanfeust-des-etoiles.html)
+- [Cixi de Troy](https://bdplus.cc/serie_static/cixi-de-troy.html)
+- [Conquérants de Troy](https://bdplus.cc/serie_static/conquerants-de-troy.html)
+- [Lanfeust Quest](https://bdplus.cc/serie_static/lanfeust-quest.html)
+- [Lanfeust Odyssey](https://bdplus.cc/serie_static/lanfeust-odyssey.html)
+
+---
+
+### Les Terres d’Arran
+- [Elfes](https://bdplus.cc/serie_static/elfes.html)
+- [Nains](https://bdplus.cc/serie_static/nains.html)
+- [Orcs & Gobelins](https://bdplus.cc/serie_static/orc-gobelins.html)
+- [Mages](https://bdplus.cc/serie_static/mages.html)
+- [Les Maîtres Inquisiteurs](https://bdplus.cc/serie_static/les-maitres-inquisiteurs.html)
+- [Terres Dogon](https://bdplus.cc/serie_static/terres-dogon.html)
+- [Guerre Darran](https://bdplus.cc/serie_static/guerre-darran.html)
